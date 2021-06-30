@@ -9,8 +9,9 @@
   <body>
     <div class="container">
       <form class="calculator" name="calc">
+        <p id="history-value"></p>
         <input type="text" readonly class="value" name="txt"/>
-        <span class="num clear" onclick="calc.txt.value = ''">c</span>
+        <span class="num clear" onclick="clearDisplay()">c</span>
         <span class="num" onclick="document.calc.txt.value +='/'">/</span>
         <span class="num" onclick="document.calc.txt.value +='*'">*</span>
         <span class="num" onclick="document.calc.txt.value +='7'">7</span>
@@ -27,15 +28,12 @@
         <span class="num" onclick="document.calc.txt.value +='0'">0</span>
         <span class="num" onclick="document.calc.txt.value +='00'">00</span>
         <span class="num" onclick="document.calc.txt.value +='.'">.</span>
-        <span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+        <span class="num equal" onclick="equalButton()">=</span>
       </form>
     </div>
 
-      <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script type="text/javascript" src="script.js">
-
-    </script>
-
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
