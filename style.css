@@ -97,3 +97,11 @@ body::after{
   height: auto;
   background: rgba(255, 255, 255, 0.05)
 }
+.container .calculator #history-value{
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  text-align: right;
+  top: 20px;
+  right: 10px;
+}
